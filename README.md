@@ -1,44 +1,53 @@
-README.md: |
-  <p align="center">
-    <img src="https://img.icons8.com/ios-filled/100/sms.png" alt="SMS Logo">
-  </p>
 
-  # 💬 SMS Spam Classifier
+# 💬 SMS Spam Classifier
 
-  A simple machine learning project to classify SMS messages as **spam** or **not spam** using basic text analysis and natural language processing.
+A simple machine learning project to classify SMS messages as **spam** or **not spam** using basic text analysis and natural language processing.
 
-  ---
+---
 
-  ## ✅ Day 1 Progress
+## ✅ Day 1 Progress
 
-  - Loaded the dataset
-  - Performed initial data cleaning
-  - Added basic features:
-    - Number of words
-    - Number of characters
-    - Number of sentenses
-  - Did some basic exploratory data analysis (EDA)
+- Loaded the dataset  
+- Performed initial data cleaning  
+- Added basic features:
+  - Number of words
+  - Number of characters
+  - Number of sentenses
+- Did some basic exploratory data analysis (EDA)
 
-  ---
+---
 
-  ## 🛠️ Tech Stack
+## 🔄 Day 2 Progress
 
-  - Python
-  - Pandas
-  - Matplotlib
-  - Jupyter Notebook
-  - Git & GitHub
+- Continued EDA:
+  - Compared spam and ham messages on character count, word count, and sentence count  
+  - Visualized distributions using histograms and bar plots  
+  - Generated WordClouds for spam and ham messages to highlight common words  
+- Performed further preprocessing:
+  - Implemented a custom preprocessing function (stopword removal, punctuation removal, stemming)  
+  - Created a new column `transformed_text` with cleaned and processed text  
+- Verified text cleaning effectiveness with sample outputs  
 
-  ---
+---
 
-  ## 📁 Files
+## 🛠️ Tech Stack
 
-  - `spam_classifier.ipynb`: Jupyter notebook (Day 1 Work)
-  - `spam.csv`: Dataset used for training (UCI Machine Learning : SMS Spam Collection Dataset)
-  - `README.md`: Project overview
+- Python  
+- Pandas  
+- Matplotlib  
+- Jupyter Notebook  
+- Git & GitHub  
 
-  ---
+---
 
-  ## 🙌 Author
+## 📁 Files
 
-  Created by **Abhishek Godiyal**
+- `spam_classifier.ipynb`: Jupyter notebook (Day 1 & Day 2 Work)  
+- `spam.csv`: Dataset used for training (UCI Machine Learning : SMS Spam Collection Dataset)  
+- `README.md`: Project overview  
+
+---
+
+## 🙌 Author
+
+Created by **Abhishek Godiyal**
