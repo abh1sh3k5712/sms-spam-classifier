@@ -30,11 +30,27 @@ A simple machine learning project to classify SMS messages as **spam** or **not 
 
 ---
 
+## 🚀 Day 3 Progress
+
+- Vectorized the cleaned text using two methods:
+  - **CountVectorizer**
+  - **TfidfVectorizer**
+- Trained and evaluated three Naive Bayes models with both CountVectorizer and TfidfVectorizer:
+  - **GaussianNB** 
+  - **MultinomialNB** 
+  - **BernoulliNB** 
+- Compared model performances using:
+  - Accuracy, Precision, Confusion Matrix
+- Analyzed how different vectorization techniques and Naive Bayes variants affect performance
+
+---
+
 ## 🛠️ Tech Stack
 
 - Python  
 - Pandas  
 - Matplotlib  
+- Scikit-learn  
 - Jupyter Notebook  
 - Git & GitHub  
 
@@ -42,7 +58,7 @@ A simple machine learning project to classify SMS messages as **spam** or **not 
 
 ## 📁 Files
 
-- `spam_classifier.ipynb`: Jupyter notebook (Day 1 & Day 2 Work)  
+- `spam_classifier.ipynb`: Jupyter notebook (Day 1 to Day 3 Work)  
 - `spam.csv`: Dataset used for training (UCI Machine Learning : SMS Spam Collection Dataset)  
 - `README.md`: Project overview  
 
@@ -51,3 +67,4 @@ A simple machine learning project to classify SMS messages as **spam** or **not 
 ## 🙌 Author
 
 Created by **Abhishek Godiyal**
+
