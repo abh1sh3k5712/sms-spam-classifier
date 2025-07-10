@@ -1,64 +1,74 @@
+# SMS Spam Classifier
 
-# 💬 SMS Spam Classifier
-
-A simple machine learning project to classify SMS messages as **spam** or **not spam** using basic text analysis and natural language processing.
-
----
-
-## ✅ Day 1 Progress
-
-- Loaded the dataset  
-- Performed initial data cleaning  
-- Added basic features:
-  - Number of words
-  - Number of characters
-  - Number of sentenses
-- Did some basic exploratory data analysis (EDA)
+A machine learning project to classify SMS messages as **spam** or **not spam** using basic text analysis and natural language processing.
 
 ---
 
-## 🔄 Day 2 Progress
+## Project Overview
 
-- Continued EDA:
-  - Compared spam and ham messages on character count, word count, and sentence count  
-  - Visualized distributions using histograms and bar plots  
-  - Generated WordClouds for spam and ham messages to highlight common words  
-- Performed further preprocessing:
-  - Implemented a custom preprocessing function (stopword removal, punctuation removal, stemming)  
-  - Created a new column `transformed_text` with cleaned and processed text  
-- Verified text cleaning effectiveness with sample outputs  
+This project walks through a complete ML pipeline — from raw SMS data to a trained spam detection model. The dataset used is the **SMS Spam Collection** from the UCI Machine Learning Repository.
 
 ---
 
-## 🚀 Day 3 Progress
+## Data Exploration & Visualization
 
-- Vectorized the cleaned text using two methods:
-  - **CountVectorizer**
-  - **TfidfVectorizer**
-- Trained and evaluated three Naive Bayes models with both CountVectorizer and TfidfVectorizer:
-  - **GaussianNB** 
-  - **MultinomialNB** 
-  - **BernoulliNB** 
-- Compared model performances using:
-  - Accuracy, Precision, Confusion Matrix
-- Analyzed how different vectorization techniques and Naive Bayes variants affect performance
+- Loaded and inspected the dataset  
+- Cleaned the text and added basic features like:
+  - Number of words  
+  - Number of characters  
+  - Number of sentences  
+- Performed visual EDA using:
+  - Histograms and bar plots  
+  - WordClouds for both spam and ham messages  
 
 ---
 
-## 📈 Day 4 Progress
+## Text Preprocessing
 
-- Compared **MultinomialNB** with:
-  - **K-Nearest Neighbors (KNN)**
-  - **Logistic Regression**
-- Used **TF-IDF Vectorized** data for all models
-- Evaluated models using:
-  - Accuracy and Precision.
-- Compiled a comparison table to assess performance
-- Found that **Multinomial Naive_Bayes** achieved the best overall balance across metrics.
+- Built a custom preprocessing function that:
+  - Removed stopwords and punctuation  
+  - Converted text to lowercase  
+  - Applied stemming  
+- Stored the cleaned version in a new column `transformed_text`
 
 ---
 
-## 🛠️ Tech Stack
+## Feature Extraction
+
+- Vectorized the text using:
+  - **CountVectorizer**  
+  - **TF-IDF Vectorizer**
+
+---
+
+## Model Training & Evaluation
+
+Trained and compared the following models on vectorized data:
+
+- **Naive Bayes variants**:
+  - GaussianNB  
+  - MultinomialNB  
+  - BernoulliNB  
+- **K-Nearest Neighbors (KNN)**
+- **Logistic Regression**
+
+Models were evaluated using:
+- Accuracy  
+- Precision  
+- Recall  
+- F1-score
+
+---
+
+## Insights & Results
+
+- **Multinomial Naive Bayes with TF-IDF** provided the best balance across metrics  
+- **Logistic Regression** also performed strongly, especially in precision and F1  
+- Vectorization technique significantly impacted model performance
+
+---
+
+## Tech Stack
 
 - Python  
 - Pandas  
@@ -69,15 +79,16 @@ A simple machine learning project to classify SMS messages as **spam** or **not 
 
 ---
 
-## 📁 Files
+## Files
 
-- `spam_classifier.ipynb`: Jupyter notebook (Day 1 to Day 3 Work)  
-- `spam.csv`: Dataset used for training (UCI Machine Learning : SMS Spam Collection Dataset)  
-- `README.md`: Project overview  
+- `spam_classifier.ipynb`: Complete notebook (data analysis → modeling)  
+- `spam.csv`: Dataset (UCI SMS Spam Collection)  
+- `README.md`: Project summary and documentation  
 
 ---
 
-## 🙌 Author
+## Author
 
 Created by **Abhishek Godiyal**
+
 
